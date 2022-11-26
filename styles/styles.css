@@ -185,6 +185,8 @@ img {
 .mail-link,
 .phone-link {
   display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -273,16 +275,26 @@ img {
   color: var(--second-color);
 }
 /* переваги */
+
 .features-icons {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: var(--second-white-color);
+  border-radius: var(--border-radius);
+}
+
+.featurs-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
-  align-items: center;
-  justify-content: center;
   background-color: var(--second-white-color);
-  margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
   border-radius: var(--border-radius);
+  margin-bottom: 30px;
+
 }
 
 .features-list {
