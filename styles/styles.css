@@ -522,6 +522,9 @@ footer {
   border-right: 1px solid var(--cards-border-color);
   border-left: 1px solid var(--cards-border-color);
 }
+.cards-list:hover {
+  box-shadow: var(--box-shadow);
+}
 .project-title {
   max-width: 322px;
   margin-bottom: 4px;
