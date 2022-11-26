@@ -366,15 +366,10 @@ img {
   margin-bottom: 27px;
 }
 .social-item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  
   /* outline: 1px solid black; */
 }
-.social-item:hover,
-.social-item:focus {
-  background-color: var(--brend-color);
-}
+
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -384,13 +379,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+    fill: var(--items-color);
+
 }
-.join-svg {
-  fill: var(--items-color);
-}
-.join-link:hover .join-svg,
-.join-link:focus .join-svg {
+
+.join-link:hover,
+.join-link:focus {
   fill: var(--main-white-color);
+  background-color: var(--brend-color);
 }
 /* Постійні клієнти */
 .costomers-list {
