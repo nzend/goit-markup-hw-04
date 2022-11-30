@@ -71,11 +71,11 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
-      <!-- секція переваги -->
+      <!-- секція "Переваги" -->
       <section class="section benefits">
         <div class="container features-container">
           <h2 class="hide">Наші переваги</h2>
@@ -157,17 +157,24 @@
           </ul>
         </div>
       </section>
+      <!-- секція "Що ми робимо" -->
       <section class="section no-padding what-we-do">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
+
           <ul class="image-list">
             <li class="item">
-              <img
+                <img
                 src="images/img.jpg"
                 alt="друк коду на планшеті"
                 width="370"
                 height="294"
               />
+              <div class="item-title-box">
+              <p class="item-title">Десктопні Додатки</p>
+              </div>
+             
+
             </li>
             <li class="item">
               <img
@@ -176,6 +183,9 @@
                 width="370"
                 height="294"
               />
+               <div class="item-title-box">
+              <p class="item-title">Мобільні додатки</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -184,10 +194,14 @@
                 width="370"
                 height="294"
               />
+               <div class="item-title-box">
+              <p class="item-title">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
+      <!-- секція "Наша команда" -->
       <section class="section our-team-section">
         <div class="container our-team-container">
           <h2 class="section-title">Наша команда</h2>
@@ -485,5 +499,18 @@
         
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="icon-button" data-modal-close>
+          <svg  class="icon-close" width="11px" height="11px">
+            <use class="icon-close-item" href="./images/icons.svg#icon-close-icon"></use>
+          </svg>
+          
+         
+        </button>
+        
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
